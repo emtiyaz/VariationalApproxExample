@@ -11,7 +11,6 @@ X = [5*rand(N/2,D); -5*rand(N/2,D)];
 Sigma = X*X' + eye(N); % linear kernel
 mu = zeros(N,1); % zero mean
 y = mvnrnd(mu, Sigma, 1);
-y = y(:) + 0*0.1*randn(N,1); % add some noise
 y = (y(:)>0);
 
 % optimizers options
