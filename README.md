@@ -3,8 +3,8 @@ VariationalApproxExample
 
 An example of variational approximation for Gaussian process classification.
 To run this code, download the code in a directory, and do following in MATLAB,
-> addpath(genpath(pwd))
-> example
+$ addpath(genpath(pwd))
+$ example
 
 We generate synthetic classification data (yi,Xi). We assume a GP prior with zero mean and a linear Kernel with a logit likelihood to generate binary data. 
 
