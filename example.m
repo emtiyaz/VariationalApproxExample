@@ -31,7 +31,6 @@ m0 = mu; % initial value
 v = ones(N,1); % fix v to 1
 Omega = inv(Sigma);
 [m, logLik] = minFunc(@simpleVariational, m0, optMinFunc, y, X, mu, Omega, v, bound);
-V = inv(Omega + diag(v));
 
 % plot
 figure(1)
